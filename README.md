@@ -1,2 +1,2 @@
 # bieb
-taalhuis, digitaal,etc
+taal, digitaal, etc
