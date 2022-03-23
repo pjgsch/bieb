@@ -9,7 +9,9 @@
 <!-- <link rel="stylesheet" href="../reveal/dist/theme/night.css" id="theme"> -->
 </head>
 
-<body>
+<style> section { font-size: 35px; } </style>
+
+<body >
 
 <div class="reveal">
 <div class="slides">
@@ -37,14 +39,25 @@ TITEL
 
 <section data-transition="none" data-menu-title="Buurtberichten"><p>
 U wilt <font color="red">gemeente-berichten van uw buurt</font> zien.
+<p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br>
+</section>
+
+<section><p>
+U wilt <font color="red">gemeente-berichten van uw buurt</font> zien.
 <p><br>
+<ul>
+<li>
 <ul>
 <li> <a href="https://www.leudal.nl" target="_blank">Gemeente Leudal</a>
 <li> Zoeken: 'berichten uit uw buurt'
+</ul>
 <p>
+<li class="fragment">
+<ul>
 <li> <a href="https://www.overheid.nl" target="_blank">De-Overheid</a>
 <li> Berichten uit uw buurt bekijken
 <li> Blijf op de hoogte via email
+</ul>
 </ul>
 <p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br>
 </section>
@@ -81,10 +94,12 @@ U wilt de <font color="red">WOZ waarde bekijken</font> van uw woning.
 <ul>
 <li> <a href="https://www.leudal.nl" target="_blank">Gemeente Leudal</a>
 <li> Zoeken: 'woz'
+<p>
 <li> <a href="https://www.bsgw.nl/nl" target="_blank">bsgw.nl</a>
 <li> -> WOZ-waarde
 <li> -> Waar kan ik ... WOZ-waarde raadplegen
 <li> Mijn BsGW -> DigID
+<p>
 <li> <a href="https://www.wozwaardeloket.nl" target="_blank">woz-waarde loket</a>
 </ul>
 <p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br>
@@ -97,7 +112,8 @@ U wilt uw <font color="red">rijbewijs verlengen</font>.
 <ul>
 <li> <a href="https://www.leudal.nl" target="_blank">Gemeente Leudal</a>
 <li> Zoeken: 'rijbewijs'
-<li> Maak een afspraak
+<li> -> Rijbewijs aanvragen en verlengen
+<li> -> Maak een afspraak
 <li> ... let op: gezondheidsverklaring ...
 <li> -> <a href="https://www.cbr.nl/nl.htm" target="_blank">CBR</a>
 </ul>
@@ -110,10 +126,11 @@ U wilt uw <font color="red">rijbewijs verlengen</font>.
 <p><br>
 <ul>
 <li> Verkeer en vervoer
-<li> Rijbewijs
+<li> -> Rijbewijs
 <li> ... medische keuring ...
 <li> ... groot rijbewijs ...
 <li> ... gezondheidsverklaring ...
+<p>
 <li> -> <a href="https://www.cbr.nl/nl.htm" target="_blank">CBR</a>
 <li> ... invullen gezondheidsverklaring ...
 </ul>
@@ -128,7 +145,7 @@ U wilt <font color="red">een verhuizing doorgeven</font>.
 <li> <a href="https://www.leudal.nl" target="_blank">Gemeente Leudal</a>
 <li> Zoeken: 'verhuizing'
 <li> -> Verhuizing doorgeven
-<li> -> Geef direkt uw verhuizing online door
+<li> -> Geef uw verhuizing online door
 <li> -> Start aangifte : DigID
 </ul>
 <p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br>
@@ -140,6 +157,7 @@ U wilt <font color="red">aangifte doen bij de politie</font>.
 <p><br>
 <ul>
 <li> <a href="https://www.politie.nl" target="_blank">Politie</a>
+<p>
 <li> Aangifte doen van woninginbraak
 <li> Aangifte doen van fietsendiefstal
 </ul>
@@ -154,7 +172,7 @@ U moet een <font color="red">omgevingsvergunning aanvragen</font>.
 <p><br>
 <ul>
 <li> <a href="https://www.leudal.nl" target="_blank">Gemeente Leudal</a>
-<li> Zoeken: 'omgevingsvergunning'
+<li> Zoeken: 'vergunning'
 <li> -> Omgevingsvergunning
 <li> -> Vraag een omgevingsvergunning aan ...
 <li> -> <a href="https://www.omgevingsloket.nl/" target="_blank">Omgevingsloket</a>
@@ -164,7 +182,6 @@ U moet een <font color="red">omgevingsvergunning aanvragen</font>.
 
 
 <section data-transition="none" data-menu-title="Flitsfoto"><p>
-
 U heeft een procesverbaal gekregen voor een snelheidsovertreding. 
 U bent geflitst.
 <br>
@@ -172,7 +189,7 @@ U wilt de <font color="red">flitsfoto opvragen</font>.
 <p><br>
 <ul>
 <li> <a href="https://www.cjib.nl" target="_blank">CJIB</a> (Centraal Justitieel Incassobureau) 
-<li> flitsfoto bekijken 
+<li> -> flitsfoto bekijken 
 <li> -> DigID
 </ul>
 <p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br><p><br>
@@ -399,7 +416,7 @@ Reveal.initialize({
     // icons. If your presentation needs to load a different
     // font-awesome library the 'loadIcons' option can be set to false
     // and the menu will not attempt to load the font-awesome library.
-    //loadIcons: true
+    loadIcons: true
  },
 
 plugins: [ RevealNotes, RevealMath.KaTeX, RevealMenu ]
