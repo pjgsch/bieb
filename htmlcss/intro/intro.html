@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>intro</title>
+
+<style> a { text-decoration:none; } </style> 
+<style> r { color:red; } </style>
+<style> c { color:orange; } </style>
+</head>
+
+<body style="margin:60;padding:0" text="black" bgcolor="lightyellow" vlink="blue">
+
+<p>
+<hr size="5">
+
+<!-- ============================================================= -->
+
+<h1>Workshop HTML/CSS</h1>
+
+Tijdens deze workshop leert u de <c>basis van HTML en CSS</c>.
+Hiermee kunt u een eenvoudige website maken.
+Dat doet u op uw eigen computer.
+Daarvoor heeft u een <c>tekst-editor</c> nodig.
+Op een Windows computer is Notepad (kladblok) daarvoor te gebruiken.
+Ook Wordpad is geschikt, maar dan moet u de gemaakte tekst-files 
+opslaan als 'plane text'.
+Er zijn betere editors beschikbaar, bijvoorbeeld 'Notepad++', die
+u kunt vinden op
+<a href="https://Portableapps.com" target="_blank">Portableapps.com</a>.
+
+<p>
+In de workshop worden een aantal onderwerpen behandeld, waarbij, na
+een korte introductie, de nadruk ligt op het <c>zelf doen</c>.
+U krijgt een verzameling webpagina's aangeboden 
+waarvan u de broncode kunt bekijken in de browser (met Ctrl-U).
+Tijdens de workshop krijgt u de broncode van alle pagina's
+ook aangeboden op uw computer.
+In de broncode kunt u wijzigingen aanbrengen en/of dingen toevoegen 
+(oefeningen!).
+Het resultaat bekijkt u in de browser.
+Op deze manier ontdekt u zelf de mogelijkheden van HTML en CSS.
+
+<p>
+HTML en CSS hebben veel opties, te veel om allemaal te kennen.
+Veel zult u moeten <c>opzoeken op internet</c>.
+Dat kan natuurlijk met de gebruikelijke zoekprogramma's, 
+maar er is een aantal sites, waar we veel kunnen vinden en ook
+kunnen uitproberen.
+Dat is wel allemaal in het Engels.
+Deze workshop wijst u de weg bij deze zoektocht.
+In onderstaande tabel zijn enkele sites genoemd.
+
+<!-- ============================================================= -->
+
+<p>
+<table width="%100" border="1" cellpadding="5" cellspacing="2">
+
+<tr>
+<td valign="top">
+<a href="https://www.w3schools.com/html/" target="_blank">W3schools.com</a>
+</td>
+<td valign="top">
+Een handige site voor <c>opzoeken en uitproberen</c>. 
+In het menu staan onder "HTML Tag List" (vrijwel) alle HTML-tags in een
+lijst.
+Je kunt ze uitproberen en ermee experimenteren.
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<a href="https://www.tutorialspoint.com/html" target="_blank">
+Tutorialspoint</a>
+</td>
+<td valign="top">
+Een site met diverse <c>online cursussen</c>, waaronder HTML en CSS.
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">
+MDN-Web-Docs</a>
+</td>
+<td valign="top">
+Een site met <c>uitgebreide documentatie</c>, ook voor beginners.
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<a href="https://www.w3docs.com/learn-html.html" target="_blank">
+W3docs</a>
+</td>
+<td valign="top">
+Op deze site kunt u veel vinden over HTML en CSS 
+(en andere zaken).
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<a href="https://html-online.com/editor/" target="_blank">html-online</a>
+</td>
+<td valign="top">
+Dit is een <c>online HTML-generator</c> waarmee snel het effect van
+parameters uitgeprobeerd kan worden. Kijk vooral eens naar de 
+'cheat sheets'.
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<a href="https://conversiontools.io/convert/excel-to-html" target="_blank">excel-to-html</a>.
+</td>
+<td valign="top">
+Als u data in een Excel-file heeft staan, kunt u die omzetten in
+- <c>converteren</c> -  een HTML-tabel.
+Dat kan direkt in Excel, maar ook op deze online site.
+</td>
+</tr>
+
+<tr>
+<td valign="top">
+<a href="https://htmlcolors.com/color-names" target="_blank">
+kleuren</a>
+</td>
+<td valign="top">
+Kleuren - <c>kleurnamen en codes</c> - kunnen hier worden geselecteerd.
+</td>
+</tr>
+</table>
+
+<!-- ============================================================= -->
+
+<h1>Een webpagina en een website</h1>
+
+Een <c>website</c> bestaat meestal uit meerdere pagina's, die onderling
+gekoppeld zijn door <c>links</c>, u allen bekend.
+Links worden ook gebruikt om naar een andere plaats in dezelfde pagina
+te springen.
+Zo'n link wordt een <c>bookmark</c> genoemd.
+Zoals u weet, worden links ook gebruikt om externe pagina's
+te openen of dingen te downloaden.
+
+<p>
+Een pagina bestaat uit inhoud, dus tekst en o.a. plaatjes, en opmaakcommando's.
+De opmaak-taal is <c>HTML</c>, HyperText Markup Language.
+Met HTML alleen kunnen we webpagina's en zelfs een complete website
+maken.
+Om redenen die later aan de orde komen, wordt als extraatje 
+voor de opmaak ook vaak de opmaak-taal <c>CSS</c> gebruikt: 
+Cascading Style Sheets.
+
+<p>
+Als u een website op uw computer heeft gemaakt, kunt u hem in de browser
+uittesten.
+Het is echter nog geen website in de echte betekenis van het woord,
+want hij staat nog niet op het web (= het internet), anders 
+gezegd, de website is niet online.
+
+<!-- ============================================================= -->
+
+<h2>De webserver</h2>
+
+Een website wordt geplaatst op een computer die 24/7 aan het internet
+gekoppeld is.
+Op die computer draait een programma, de zogeheten <c>webserver</c>.
+De webserver 'luistert' op bepaalde 'poorten' van de computer of er
+een vraag naar een webpagina binnenkomt.
+Als dat zo is, zoekt of maakt de webserver die pagina en stuurt hem
+naar de aanvrager.
+<br>
+Die aanvrager wordt een <c>'client'</c> genoemd en dat is in de meeste
+gevallen een browser.
+Het opvragen van een pagina gebeurt doordat u op een link klikt.
+
+<!-- ============================================================= -->
+
+<h2>De hosting provider</h2>
+
+Het beschikbaar maken van een website op een webserver wordt
+<c>hosting</c> genoemd.
+Informatie hierover staat (in het Engels) beschreven op de site 
+<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Publishing_your_website" target="_blank">
+MDN-Web-Docs</a>.
+Het bedrijf dat die webserver beheert is de <c>hosting provider</c>.
+Er zijn zeer veel hosting providers, die verschillende 'pakketten'
+tegen verschillende kosten aanbieden.
+Vergelijkingsites kunnen u helpen bij het kiezen van een 
+hosting provider.
+<br>
+Belangrijke zaken waarop gelet moet worden zijn:
+<ul>
+<li> de maximale hoeveelheid opslag
+<li> de maximale omvang van het dataverkeer
+<li> de snelheid
+<li> de veiligheid
+<li> de mogelijkheid van onderhoud door de klant
+<li> de helpdesk
+</ul>
+
+<!-- ============================================================= -->
+<h1>De meest eenvoudige webpagina</h1>
+
+We eindigen deze introductie met een eerste kennismaking met HTML.
+HTML is een opmaaktaal waarmee de inhoud - tekst, foto's, 
+documenten - op een bepaalde manier zichtbaar wordt gemaakt
+in de browser.
+Die opmaak gebeurt mat <c>tags</c>.
+Inhoud en tags worden met de tekst editor
+in een file getypt en
+de browser herkent zo'n html-file als die de <c>extentie .html</c> heeft.
+
+<p>
+Elke webpagina begint met de tag 
+<r>&lt;html&gt;</r>
+en eindigd met
+<r>&lt;/html&gt;</r>.
+
+<br>
+De inhoud van de pagina staat tussen de tags 
+<r>&lt;body&gt;</r>
+en
+<r>&lt;/body&gt;</r>.
+
+De <c>meest eenvoudige webpagina</c> ziet is dus 
+<a href="intro1.html" target="_blank">hier</a>.
+Bekijk de <c>broncode</c> in de browser met [Ctrl-U].
+
+<p>
+U ziet dat de tekst doorloopt, d.w.z. er wordt niet overgegaan op
+een nieuwe regel.
+Dat is normaal in HTML, maar dat kan allemaal veranderd worden
+door tags voor de opmaak te gebruiken.
+<br>
+Als we toch een iets beter leesbare pagina willen maken,
+kunnen we de tekst plaatsen tussen de tags 
+<r>&lt;pre&gt;</r>
+en
+<r>&lt;/pre&gt;</r>,
+zoals in 
+<a href="intro2.html" target="_blank">deze</a> pagina.
+De letters zijn dan wel weer erg klein.
+Ook dat kunnen we aanpassen en hoe dat moet zien we in het eerste 
+onderdeel van de workshop: <c>HTML: de basis</c>.
+
+<p><br>
+<hr size="5">
+
+</body>
+</html>
+
