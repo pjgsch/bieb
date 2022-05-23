@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>main</title>
+
+<link rel="stylesheet" href="../css/mybody.css">
+<link rel="stylesheet" href="../css/mynavbar.css">
+</head>
+
+<body>
+
+<div class="navbar">
+  <a class="active" href="#top">Home</a>
+  <a href="inhoud.html">Inhoud</a>
+  <a href="nieuws.html">Nieuws</a>
+  <a href="links.html">Links</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="main">
+
+<hr size="5">
+
+<!-- ============================================================= -->
+
+<h1>Een website</h1>
+
+Een <c>website</c> bestaat in het algemeen uit meerdere pagina's.
+We willen dat die pagina's er nagenoeg hetzelfde uitzien, dus
+de zelfde 'stijl' hebben.
+Om daarin te voorzien kunnen we in elke pagina dezelfde 
+CSS-style definities opnemen, maar dat is onhandig.
+Als we iets willen veranderen aan de layout moeten we die
+veranderingen op iedere pagina afzonderlijk toepassen.
+Het is beter om dan gebruik te maken van externe <c>CSS-style files</c>,
+die dan in iedere pagina als link worden meegenomen.
+
+<p>
+Dat is hier toegepast.
+Deze voorbeeld website heeft verschillende pagina's en alle pagina's
+hebben dezelfde opmaak.
+In de CSS-file
+<a href="../css/mybody.css" target="_blank">mybody.css</a>
+staan nu wat algemene eigenschappen gedefinieerd.
+
+<p>
+Zoals te zien is gebruiken we een <c>navigatiebalk</c> om door de 
+website te navigeren.
+
+<!-- ============================================================= -->
+
+<h2>Navigatiebalk</h2>
+
+Een navigatiebalk kan op verschillende plaatsen staan.
+Dat wordt geregeld met <c>CSS-klassen</c>.
+Omdat we voor meerdere pagina's dezelfde 'style' willen
+gebruiken, zijn de CSS-klassen in aparte files geplaatst.
+In de file 
+<a href="../css/mynavbar.css" target="_blank">mynavbar.css</a>
+kunnen diverse keuzes worden gemaakt door met een editor
+de gewenste css-file te selecteren.
+
+<!-- ============================================================= -->
+
+<h2>De pagina's</h2>
+
+De pagina's van een website worden geselecteerd met 'links'.
+Die staan in de tekst 
+of kunnen in een lijst staan, die dan als een soort menu fungeert.
+
+<p>
+Het is belangrijk om de website <c>overzichtelijk</c> te houden, d.w.z. 
+de gebruiker moet altijd terug kunnen keren naar een vast punt.
+Dat zal in veel gevallen de hoofdpagine zijn (hier: Home).
+De navigatiebalk is dus een belangrijk item op veel pagina's.
+
+<p>
+Het is handig om bij het maken van nieuwe pagina's uit te gaan
+van een <c>template</c> en die te 'vullen' met inhoud.
+(Kijk eens naar deze <a href="../paginclnavbar/page-template.html">
+template</a>
+en kerr dan hier terug.)
+Op deze manier bevat elke pagina dus de inhoud en de code
+voor de navigatiebalk.
+
+<p>
+Als we in de navigatiebalk een link willen toevoegen,
+moeten we dat in elke pagina doen.
+Het is dus zaak om, opnieuw, vooraf goed te bedenken wat er in
+de navigatiebalk moet staan.
+
+<p>
+We kunnen er ook voor kiezen om pagina's te maken zonder navigatiebalk
+(en zelfs zonder body-CSS-file) maar dan wel met een link aan het
+begin van de pagina om terug te keren naar een vast punt,
+bijvoorbeeld de inhoudspagina of de hoofdpagina.
+Dat wordt dan zoiets als 
+<a href="../pagexclnavbar/page-min-navbar.html">dit</a>.
+
+<!-- ============================================================= -->
+
+<h2>Inhoud in kolommen</h2>
+
+We kunnen de inhoud van een pagina in twee kolommen zetten
+met behulp van een tabel.
+De eerste kolom is dan bijvoorbeeld tekst en de tweede
+kolom bavat figuren, foto's of een menu met links.
+Hier is een 
+<a href="../paginclnavbar/page-txtcol-1.html">voorbeeld</a>.
+
+<p>
+Het is ook mogelijk om tekst direkt in kolommen te zetten,
+zoals 
+<a href="../paginclnavbar/page-txtcol-2.html">hier</a> te zien is.
+
+<!-- ============================================================= -->
+
+<h2>Pagination</h2>
+
+Soms is het handig om een <c>pagina-selector</c> te plaatsen waarmee
+naar bepaalde pagina's (nummers) gesprongen kan worden,
+zoals op
+<a href="../paginclnavbar/page-pagination-1.html">deze</a>
+pagina's te zien is.
+
+</div>
+</body>
+</html>
