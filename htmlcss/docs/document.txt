@@ -1,0 +1,8 @@
+
+Dit is een pdf document.
+
+Veel browsers kunnen dit direkt weergeven op het scherm.
+
+Sommige browsers - vooral op mobiele apparaten - 
+willen het document eerst downloaden.
+

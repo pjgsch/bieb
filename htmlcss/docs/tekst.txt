@@ -1,0 +1,4 @@
+
+Dit is een tekst document.
+
+De meeste browsers kunnen dit zonder problemen weergeven.
