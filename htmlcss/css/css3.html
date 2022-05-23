@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ============================================================= -->
+
+<head>
+<title>css3: external</title>
+
+<link rel="stylesheet" href="cssfile.css">
+</head>
+
+<!-- ============================================================= -->
+
+<body>
+
+<hr size="5"><br>
+
+<h2>Interne styles</h2>
+
+Bekijk weer de broncode.
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+<p>
+In deze pagina plaatsen we style-definities bovenaan de pagina.
+Ze staan tussen 
+<font color="red">&lt;head&gt;&lt;/head&gt;</font>
+en hebben de algemene vorm
+
+<p>
+<font size="+2" color="red">
+<pre>
+   &lt;style&gt;
+      selector1 { property1: value1; property2: value2; }
+      selector2 { property: value; }
+      ...
+   &lt;/style&gt;
+</pre>
+</font>
+
+<p>
+De 'selector' kan een bestaande 'tag' zijn die wordt aangepast.
+Bijvoorbeeld de link-tag &lta&gt;.
+
+<p>
+De definities van 'properties' en 'values' is anders dan in de in-line 
+styles.
+Vergelijk bijvoorbeeld de manier waarop de 
+<font color="red">&lt;body&gt;</font>-tag is
+aangepast.
+
+<p>
+Op die manier kunnen we alle tags in deze pagina in een keer veranderen.
+<br>
+Let bijvoorbeeld op 
+<a href="#">deze link</a>
+die verder niks doet, maar waaraan we zien dat er geen streep 
+onder staat.
+De link-tag <font color="red">&lt;a&gt</font> is aangepast.
+
+<p>
+Ook de <font color="red">&lt;body&gt;</font>-tag is zo aangepast.
+
+<p>
+We kunnen ook nieuwe tags definieren.
+Bijvoorbeeld een tag die de kleur van de letters verandert.
+<r>Dat is hier toegepast: alle letters worden rood. Tot hier.</r>
+
+<p>
+Het handige is dat zo met een eenvoudige ingreep de kleur kunnen
+veranderen.
+
+<p>
+Vaak wordt de &lt;div&gt;-tag gebruikt om voor een bepaald
+gedeelte van de pagina styles te specificeren.
+
+<p>
+<div>
+Met de &ltdiv-tag&gt; (division) veranderen we een gedeelte van de pagina.
+Hier is bijvoorbeeld een ander font gekozen. 
+En een andere kleur.
+</div>
+
+<p>
+Een overzicht van CSS-selectors en CSS-properties vindt u 
+<a href=="https://www.w3schools.com/cssref/default.asp" target="_blank">
+hier</a>
+en u kunt er naar hartelust mee experimenteren.
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+Voor een bepaalde 'selector' kunnen we de definitie specificeren met
+een nieuwe 'selector'.
+De syntax is:
+
+<p>
+<font size="+2" color="red">
+<pre>
+   &lt;style&gt;
+      selector.selector1 { property1: value1; property2: value2; }
+      selector.selector2 { property: value; }
+      ...
+   &lt;/style&gt;
+</pre>
+</font>
+
+De tweede 'selector' wordt een klasse ('class') genoemd.
+
+<p>
+As voorbeeld staan hieronder drie paragrafen in verschillend 
+lettertype.
+Bekijk de broncode voor de manier waarop dit tot stand is gekomen.
+
+<p class="a">Paragraaf met normaal font in lichtblauwe kleur.</p>
+<p class="b">Paragraaf met italic font.</p>
+<p class="c">Paragraaf met bold font.</p>
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+<p>
+We kunnen een klasse ook apart definieren
+en later op een bepaalde selector toepassen.
+Dat is nodig als we bijvoorbeeld de &lt;div&gt;-tag op verschillende
+plaatsen willen inzetten met een andere style-definitie.
+<br>
+De sytax is als volgt - let op de punt voorafgand aan de naam - :
+
+<p>
+<font size="+2" color="red">
+<pre>
+   &lt;style&gt;
+      .classname { properties: values; }
+   &lt;/style&gt;
+</pre>
+</font>
+
+<p>
+<div class="special">
+En de broncode ziet u dat hier gebruik is gemaakt van de
+&lt;div&gt;-tag om de paragraaf een bepaald aanzien te geven.
+De <a href="#">link-tag</a> is onveranderd van kleur.
+</div>
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+<p>
+Het kan nog een slagje gedetailleerder (complexer, zo u wilt).
+We kunnen binnen een klasse de definities van properties beperken 
+tot bepaalde tags.
+Je krijgt dan het volgende:
+
+<p>
+<font size="+2" color="red">
+<pre>
+   &lt;style&gt;
+      .classname tag { properties: values; }
+   &lt;/style&gt;
+</pre>
+</font>
+
+<p>
+<div class="speciallink">
+En de broncode ziet u hier weer gebruik is gemaakt van de
+&lt;div&gt;-tag om de paragraaf een bepaald aanzien te geven.
+De <a href="#">link-tag</a> is nu dit.
+We zien dat de oorspronkelijke style-definitie van de &lt;div&gt;-tag
+worden overschreven of aangevuld.
+</div>
+
+<p>
+Wat de link-tag betreft kunnen zullen we ook nog demonstreren dat het
+uiterlijk kan veranderen als we er met de muis overheen bewegen (hover)
+of als de link wordt aangklikt (active) of in het verleden aangeklikt
+is (visited).
+<br>
+Het wordt in de volgende paragraaf gedemonstreerd.
+
+<p class="linkstyle">
+We presenteren hier weer een blinde link: 
+<a href="#">deze</a>.
+</p>
+
+Hier laten we het bij voor wat betreft CSS-style definities.
+Zoals u ziet is het werken met CSS-styles best ingewikkeld.
+Er zijn namelijk heel veel mogelijkheden en die kunnen ook nog eens
+gecombineerd worden.
+Opzoeken op internet is het parool en ...
+voorbeelden zoeken en kopieren.
+
+
+<p><br>
+<hr size="5">
+
+</body>
+</html>

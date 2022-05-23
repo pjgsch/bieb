@@ -1,0 +1,34 @@
+
+/* 
+Dit is een CSS-file waarin de style-definities zijn opgenomen.
+De file wordt gelinked in een pagina, waarna de CSS-definities
+gebruikt kunnen worden.
+
+De definities van 'css2.html' zijn hieronder gekopieerd
+waarna de <style< en </style> tags zijn verwijderd.
+*/
+
+body { margin:40; padding:10; background-color: lightyellow; } 
+   a { text-decoration:none; color:magenta;} 
+   r { color:red; } 
+ div { color:grey; font-size:20px; font-style:italic; } 
+
+
+
+p.a { font-style: normal; color: lightblue; }
+p.b { font-style: italic; }
+p.c { font-weight: bold; }
+
+
+
+   .special { font-size:25px; font-weight:bold; }
+
+   .speciallink a { color:green; }
+
+   .linkstyle a         { text-decoration:none; color:blue;}
+   .linkstyle a:hover   { background: yellow; color: black; }
+   .linkstyle a:active  { background-color: green; color: white; }
+   .linkstyle a:visited { text-decoration:none; color:red; }
+
+
+
