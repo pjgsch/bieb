@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>listtab</title>
+</head>
+
+<body>
+
+<h1>Lijsten en tabellen</h1>
+
+<h2>Lijsten</h2>
+
+We noemen hier drie soorten 'lijsten': 
+de <em>ongeordende</em> lijst, 
+de <em>geordende</em> of <em>genummerde</em> lijst en
+de <em>definitie</em> lijst 
+('unordered list', 'ordered list', 'definition list').
+
+<p>
+De ongeordende lijst staat tussen 
+<font color="red">&lt;ul&gt;</font> en  
+<font color="red">&lt;/ul&gt;</font>.
+De afzonderlijke items worden voorafgegaan door 
+<font color="red">&lt;li&gt;</font>.
+
+<p>
+<ul>
+<li> item 1
+<li> item 2
+<li> item 3
+</ul>
+
+<p>
+Een geordende lijst staat tussen
+<font color="red">&lt;ol&gt;</font> en  
+<font color="red">&lt;/ol&gt;</font>.
+De afzonderlijke items worden ook nu voorafgegaan door 
+<font color="red">&lt;li&gt;</font>.
+
+<p>
+<ol>
+<li> item 1
+<li> item 2
+<li> item 3
+</ol>
+
+<p>
+Een definitie lijst staat tussen
+<font color="red">&lt;dl&gt;</font> en  
+<font color="red">&lt;/dl&gt;</font>.
+De afzonderlijke items worden voorafgegaan door 
+<font color="red">&lt;dt&gt;</font> of door
+<font color="red">&lt;dd&gt;</font>
+
+<p>
+<dl>
+<dt>item 1
+<dd>beschrijving item 1
+<dt>item 2
+<dd>beschrijving item 2
+</dl>
+
+<p>
+We kunnen deze tags aanvullen met opties.
+(Zie oefeningen.)
+
+<h2>Tabellen</h2>
+
+Een tabel staat tussen de tags
+<font color="red">&lt;table&gt;</font> en
+<font color="red">&lt;/table&gt;</font>.
+In de tabel staat een rij tussen de tags
+<font color="red">&lt;tr&gt;</font> en
+<font color="red">&lt;/tr&gt;</font>.
+In elke rij staat een kolom tussen de tags
+<font color="red">&lt;td&gt;</font> en
+<font color="red">&lt;/td&gt;</font>.
+
+<!-- TABEL 1 -->
+
+<p>
+<table>
+<tr>
+<td> rij 1, kolom 1 </td>
+<td> rij 1, kolom 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td> rij 2, kolom 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 </td>
+</tr>
+</table>
+
+<p>
+In veel gevallen zullen we opties gebruiken om de tabel te 
+voorzien van een 'border' en om afstand tussen de rijen en kolommen
+te genereren.
+Bekijk in de source code van deze pagina, hoe ondertaande tabel is 
+gemaakt.
+
+<!-- TABEL 2 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td> rij 1, kolom 1 </td>
+<td> rij 1, kolom 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td> rij 2, kolom 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 </td>
+</tr>
+</table>
+</center>
+
+<p>
+We kunnen de tabelbreedte specificeren, hieronder met de
+optie
+<font color="red">width="50%"</font> in de table-tag.
+
+<!-- TABEL 3 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5" width="50%">
+<tr>
+<td> rij 1, kolom 1 </td>
+<td> rij 1, kolom 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td> rij 2, kolom 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 </td>
+</tr>
+</table>
+</center>
+
+<p>
+Als de tekst niet in alle cellen even lang is, krijgen we onderstaande 
+tabel. De langste tekst bepaalt de kolombreedte.
+
+<!-- TABEL 4 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5" width="50%">
+<tr>
+<td>  1, 1 </td>
+<td> rij 1, kol 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td>  2, 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 en een lange tekst</td>
+</tr>
+</table>
+</center>
+
+<p>
+Dat kunnen we voorkomen door de kolombreedte voor te schrijven als
+optie in 
+<font color="red">&lt;td&gt;</font> dus
+<font color="red">&lt;td width="30%"&gt;</font>.
+
+<!-- TABEL 5 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5" width="50%">
+<tr>
+<td width="30%">  1, 1 </td>
+<td width="30%"> rij 1, kol 2 </td>
+<td width="30%"> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td>  2, 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 en een lange tekst</td>
+</tr>
+</table>
+</center>
+
+<p>
+We moeten er dan voor zorgen dat de tekst in een cell mooi is
+uitgelijnd.
+Dat doen we door in
+<font color="red">&lt;td&gt;</font>
+een optie toe te voegen, waarmee we nu hebben:
+<font color="red">&lt;td width="30%" valign="top"&gt;</font>
+hetgeen resulteert in
+
+<!-- TABEL 6 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5" width="50%">
+<tr>
+<td width="30%" valign="top">  1, 1 </td>
+<td width="30%" valign="top"> rij 1, kol 2 </td>
+<td width="30%" valign="top"> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td valign="top">  2, 1 </td>
+<td valign="top"> rij 2, kolom 2 </td>
+<td valign="top"> rij 2, kolom 3 en een lange tekst</td>
+</tr>
+</table>
+</center>
+
+<p>
+Er zijn vele mogelijkheden om zaken in tabellen te organiseren.
+In de oefeningen zullen we er een aantal uitproberen.
+
+<p><br>
+<hr size=5>
+
+</body>
+</html>
+
