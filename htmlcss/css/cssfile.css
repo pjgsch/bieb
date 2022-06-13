@@ -18,7 +18,7 @@ body { margin:40; padding:10; background-color: lightyellow; }
 p.a { font-style: normal; color: lightblue; }
 p.b { font-style: italic; }
 p.c { font-weight: bold; }
-
+p.box { width: 100px; heigth: 50px; padding: 20px; border: 1px solid; }
 
 
    .special { font-size:25px; font-weight:bold; }
