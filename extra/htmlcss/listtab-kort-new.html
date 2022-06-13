@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>listtab-kort-new</title>
+</head>
+
+<!-- ================================================== -->
+<!-- De achtergrondkleur is nu 'lightyellow' -->
+<!-- ================================================== -->
+
+<body bgcolor="lightyellow">
+
+<h1>Lijsten en tabellen</h1>
+
+<h2>Lijsten</h2>
+
+We noemen hier drie soorten 'lijsten': 
+de <em>ongeordende</em> lijst, 
+de <em>geordende</em> of <em>genummerde</em> lijst en
+de <em>definitie</em> lijst 
+('unordered list', 'ordered list', 'definition list').
+
+<p>
+De ongeordende lijst staat tussen [ul] en [/ul].
+De afzonderlijke items worden voorafgegaan door [li].
+
+<p>
+<ul>
+<li> item 1
+<li> item 2
+<li> item 3
+</ul>
+
+<!-- ================================================== -->
+<p>
+<font color="red">
+De regelafstand tussen de items is groter gemaakt. 
+</font>
+<!-- ================================================== -->
+
+<p>
+<ul>
+<li> item 1
+<p>             <!-- Dit staat nu voor het tweede item -->
+<li> item 2
+<p>             <!-- Dit staat nu voor het derde item -->
+<li> item 3
+</ul>
+
+<!-- ================================================== -->
+
+<p>
+<font color="red">
+Bovenstaande lijst met in elke lijst drie nieuwe items:
+</font>
+
+<p>
+<ul>
+<li> item 1
+ <ul>
+ <li> item 1a
+ <li> item 1b
+ <li> item 1c
+ </ul>
+<p>             
+<li> item 2
+ <ul>
+ <li> item 2a
+ <li> item 2b
+ <li> item 2c
+ </ul>
+<p>             
+<li> item 3
+ <ul>
+ <li> item 3a
+ <li> item 3b
+ <li> item 3c
+ </ul>
+</ul>
+
+<!-- ================================================== -->
+
+<p>
+Een geordende lijst staat tussen [ol] en [/ol].
+De afzonderlijke items worden ook nu voorafgegaan door [li].
+
+<p>
+<ol>
+<li> item 1
+<li> item 2
+<li> item 3
+</ol>
+
+<!-- ================================================== -->
+<p>
+<font color="red">
+De lijst met letters ipv cijfers.
+</font>
+<!-- ================================================== -->
+
+<p>
+<ol type="a">
+<li> item 1
+<li> item 2
+<li> item 3
+</ol>
+
+<!-- ================================================== -->
+<p>
+<font color="red">
+De lijst met Romeinse cijfers.
+</font>
+<!-- ================================================== -->
+
+<p>
+<ol type="I">
+<li> item 1
+<li> item 2
+<li> item 3
+</ol>
+
+<!-- ================================================== -->
+
+<p>
+Een definitie lijst staat tussen [dl] en [/dl].
+De afzonderlijke items worden voorafgegaan door [dt] of door [lt]
+
+<p>
+<dl>
+<dt>item 1
+<dd>beschrijving item 1
+<dt>item 2
+<dd>beschrijving item 2
+</dl>
+
+<p>
+We kunnen deze tags aanvullen met opties.
+(Zie oefeningen.)
+
+<h2>Tabellen</h2>
+
+Een tabel staat tussen de tags [table] en [/table].
+In de tabel staat een rij tussen de tags [tr] en [/tr].
+In elke rij staat een kolom tussen de tags [td] en [td].
+
+<!-- TABEL 1 -->
+
+<p>
+<table>
+<tr>
+<td> rij 1, kolom 1 </td>
+<td> rij 1, kolom 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td> rij 2, kolom 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 </td>
+</tr>
+</table>
+
+<p>
+In veel gevallen zullen we opties gebruiken om de tabel te 
+voorzien van een 'border' en om afstand tussen de rijen en kolommen
+te genereren.
+Bekijk in de source code van deze pagina, hoe ondertaande tabel is 
+gemaakt.
+
+<!-- TABEL 2 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td> rij 1, kolom 1 </td>
+<td> rij 1, kolom 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td> rij 2, kolom 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 </td>
+</tr>
+</table>
+</center>
+
+<!-- ================================================== -->
+<p>
+<font color="red">
+De tabel met 'colspan="3"' voor eerste rij.
+</font>
+<!-- ================================================== -->
+
+<p>
+<center>
+<table border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td colspan="3" align="center"> rij 1, kolom 1-3 </td>
+</tr>
+<tr>
+<td> rij 2, kolom 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 </td>
+</tr>
+</table>
+</center>
+
+<p>
+We kunnen de tabelbreedte specificeren, hieronder met de
+optie <em>width="50%"</em> in de table-tag.
+
+<!-- TABEL 3 -->
+
+<!-- ================================================== -->
+<p>
+<font color="red">
+Andere waarden voor "border", "cellspacing" en "cellpadding".
+</font>
+<!-- ================================================== -->
+
+<center>
+<!-- <table border="1" cellspacing="0" cellpadding="5" width="50%"> -->
+<!-- <table border="2" cellspacing="3" cellpadding="8" width="50%"> -->
+<table border="2" cellspacing="5" cellpadding="5" width="50%">
+<tr>
+<td> rij 1, kolom 1 </td>
+<td> rij 1, kolom 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td> rij 2, kolom 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 </td>
+</tr>
+</table>
+</center>
+
+<p>
+Als de tekst niet in alle cellen even lang is, krijgen we onderstaande 
+tabel. De langste tekst bepaalt de kolombreedte.
+
+<!-- TABEL 4 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5" width="50%">
+<tr>
+<td>  1, 1 </td>
+<td> rij 1, kol 2 </td>
+<td> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td>  2, 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 en een lange tekst</td>
+</tr>
+</table>
+</center>
+
+<p>
+Dat kunnen we voorkomen door de kolombreedte voor te schrijven als
+optie in [td] dus [td width="30%"].
+
+<!-- TABEL 5 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5" width="50%">
+<tr>
+<td width="30%">  1, 1 </td>
+<td width="30%"> rij 1, kol 2 </td>
+<td width="30%"> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td>  2, 1 </td>
+<td> rij 2, kolom 2 </td>
+<td> rij 2, kolom 3 en een lange tekst</td>
+</tr>
+</table>
+</center>
+
+<p>
+We moeten er dan voor zorgen dat de tekst in een cel mooi is
+uitgelijnd.
+Dat doen we door in [td] een optie toe te voegen, waarmee we nu hebben:
+[td width="30%" valign="top"] hetgeen resulteert in
+
+<!-- TABEL 6 -->
+
+<center>
+<table border="1" cellspacing="0" cellpadding="5" width="50%">
+<tr>
+<td width="30%" valign="top">  1, 1 </td>
+<td width="30%" valign="top"> rij 1, kol 2 </td>
+<td width="30%" valign="top"> rij 1, kolom 3 </td>
+</tr>
+<tr>
+<td valign="top">  2, 1 </td>
+<td valign="top"> rij 2, kolom 2 </td>
+<td valign="top"> rij 2, kolom 3 en een lange tekst</td>
+</tr>
+</table>
+</center>
+
+<p>
+Er zijn vele mogelijkheden om zaken in tabellen te organiseren.
+In de oefeningen zullen we er een aantal uitproberen.
+
+
+<!-- ================================================== -->
+<hr>
+<p>
+<font color="red">
+De nieuwe tabel met twee kolommen.
+De breedte van het plaatje is in percentage van
+de breedte van de kolom.
+<br>
+Het is handig om even een border="1" te gebruiken.
+We kunnen dan beter zien waar de tekst in de kolommen
+staat.
+</font>
+<!-- ================================================== -->
+
+<center>
+<table border="0" cellspacing="10" cellpadding="10" width="100%">
+<tr>
+<td width="40%" valign="top"> 
+Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. 
+</td>
+<td width="40%" valign="top"> 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+Dit is een kort stukje tekst. Dit is een kort stukje tekst. 
+
+<p align="center">
+<img src="../../htmlcss/figs/linde5.jpg" width="40%">
+</p>
+
+</td>
+</tr>
+</table>
+</center>
+
+<!-- ================================================== -->
+
+<!-- ================================================== -->
+<hr>
+<p>
+<font color="red">
+Hieronder staat de tabel, gemaakt in LibreOffice en
+geconverteerd online.
+<br>
+De eigenlijke tabel is uit de geconverteerde file
+gecopieerd en van een border etc. voorzien.
+<p>
+We hoeven deze conversie niet online te doen.
+LibreOffice kan de tabel namelijk opslaan in 'html'-formaat.
+<br>
+Het resultaat is identiek aan de online-conversie.
+</font>
+<!-- ================================================== -->
+
+<p>
+<center>
+<!-- 
+<table cellspacing="0" border="0">
+	<colgroup span="3" width="85"></colgroup> 
+-->
+<table cellspacing="0" cellpadding="5" border="1">
+	<tr>
+		<td height="17" align="left" valign=bottom>kolom 1, rij 1</td>
+		<td align="left" valign=bottom>kolom 2, rij 1</td>
+		<td align="left" valign=bottom>kolom 3, rij 1</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=bottom>kolom 1, rij 2</td>
+		<td align="left" valign=bottom>kolom 2, rij 2</td>
+		<td align="left" valign=bottom>kolom 3, rij 2</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=bottom>kolom 1, rij 3</td>
+		<td align="left" valign=bottom>kolom 2, rij 3</td>
+		<td align="left" valign=bottom>kolom 3, rij 3</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=bottom>kolom 1, rij 4</td>
+		<td align="left" valign=bottom>kolom 2, rij 4</td>
+		<td align="left" valign=bottom>kolom 3, rij 4</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=bottom>kolom 1, rij 5</td>
+		<td align="left" valign=bottom>kolom 2, rij 5</td>
+		<td align="left" valign=bottom>kolom 3, rij 5</td>
+	</tr>
+</table>
+</center>
+
+
+<p><br>
+<hr size=5>
+
+</body>
+</html>
+
