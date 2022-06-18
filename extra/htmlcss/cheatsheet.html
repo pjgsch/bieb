@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>cheatsheet</title>
+
+<style> a { text-decoration:none; } </style> 
+<style> r { color:red; } </style>
+<style> c { color:orange; } </style>
+</head>
+
+<body style="margin:60;padding:0" text="black" bgcolor="lightyellow" vlink="blue">
+
+<p>
+<hr size="5" color="red">
+<p>
+
+In onderstaande tabel staan HTML-tags en CSS-definities die in de
+workshop voorkomen.
+<br>
+(Uitgebreide lijsten van W3Schools.com zijn ook beschikbaar.)
+<br>
+Voorbeelden en <c>toepassingen</c> zijn beschreven.
+
+<p>
+<center> 
+<table border=1 cellpadding=5 width="90%"> 
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<tr>
+<td colspan="2" align="center" bgcolor="yellow">
+<font color="red">HTML</font>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- tags -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="30%"> 
+HTML Tags
+</td>
+<td valign="top"> 
+De uitgebreide lijst met
+<a href="https://www.w3schools.com/tags/default.asp" target="_blank">
+HTML Tags</a> van W3Schools.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- attributes -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="30%"> 
+HTML Attributes
+</td>
+<td valign="top"> 
+De uitgebreide lijst met 
+<a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">
+HTML Attributes</a> van W3Schools.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- comment -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="30%"> 
+&lt;!--  &nbsp;&nbsp;&nbsp;&nbsp;  --&gt;
+</td>
+<td valign="top"> 
+Comment
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- html -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="30%"> 
+&lt;html&gt; &lt;/html&gt;
+</td>
+<td valign="top"> 
+Start en einde van een webpagina.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- head -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;head&gt; &lt;/head&gt;
+</td>
+<td valign="top"> 
+Hier staat informatie die niet zichtbaar wordt, bijvoorbeeld
+de titel van de webpagine en CSS-style-definities.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- body -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;body&gt; &lt;/body&gt;
+</td>
+<td valign="top"> 
+Start en einde van de inhoud van een webpagina.
+<ul>
+<li> &lt;body bgcolor="lightyellow"&gt;
+<li> &lt;body link="blue" alink="blue" vlink="blue"&gt;
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- br -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;br&gt;
+</td>
+<td valign="top"> 
+Nieuwe regel.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- p -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;p&gt;
+</td>
+<td valign="top"> 
+Nieuwe paragraaf.
+<p>
+<ul>
+<li> &lt;p align="left"&gt; &nbsp; 
+     &lt;p align="right"&gt; &nbsp; 
+     &lt;p align="justify"&gt; &nbsp; 
+     &lt;p align="center"&gt;
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- h1, h2, h3, h4 -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;h1&gt; &lt;/h1&gt;
+</td>
+<td valign="top"> 
+Kopteksten.
+<ul>
+</li> h2, h3, h4, h5, h6
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- font style -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+font style
+</td>
+<td valign="top"> 
+<ul>
+<li> &lt;strong&gt;&lt;/strong&gt;
+     &nbsp;&nbsp; = &nbsp;&nbsp;
+     &lt;b&gt;&lt;/b&gt; 
+     &nbsp;&nbsp; bold
+<li> &lt;em&lt;/em&gt;
+     &nbsp;&nbsp; = &nbsp;&nbsp;
+     &lt;i&gt;&lt;/i&gt;
+     &nbsp;&nbsp; italic
+<li> &lt;tt&gt;&lt;/tt&gt;
+     &nbsp;&nbsp; teletype
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- font -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;font&gt;&lt;/font&gt;
+</td>
+<td valign="top"> 
+Font : kleur, grootte, ...
+<ul>
+<li> &lt;font color="red"&gt;&lt;/font&gt;
+<li> &lt;font size="5"&gt;&lt;/font&gt;
+<li> &lt;font size="+1"&gt;&lt;/font&gt;
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- hr -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;hr&gt;
+</td>
+<td valign="top"> 
+Horizontale lijn.
+<br>
+<ul>
+<li> &lt;hr size="2" color="red"&gt;
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- img -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;img&gt;
+</td>
+<td valign="top"> 
+Invoegen van een foto.
+<ul>
+<li> &lt;img src="relatief-pad-naar-foto/foto.jpeg"&gt;
+<li> &lt;img src="pad/foto.jpeg" width="5"&gt;
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- a -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;a&gt; &lt;/a&gt;
+</td>
+<td valign="top"> 
+Link naar webpagina.
+<ul>
+<li> &lt;a href="https://webpagina.html"&gt;Naam van webpagina&lt;/a&gt;
+<li> &lt;a href="https://webpagina.html" target="_blank"&gt;Naam van webpagina&lt;/a&gt;
+<li> &lt;a href="https://webpagina.html" target="_blank"&gt;&lt;img src=..&gt;&lt;/a&gt;
+<ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- ul -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;ul&gt;&lt;/ul&gt;
+</td>
+<td valign="top"> 
+Unordered list
+<p>
+&lt;ul&gt; <br>
+&nbsp; &lt;li&gt; <br>
+&nbsp; ... <br>
+&lt;/ul&gt;
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- ol -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;ol&gt;&lt;/ol&gt;
+</td>
+<td valign="top"> 
+Ordered list
+<p>
+<ul>
+<li>
+&lt;ol&gt; <br>
+&nbsp; &lt;li&gt; <br>
+&nbsp; ... <br>
+&lt;/ol&gt;
+<li>
+&lt;ol type="a"&gt;
+&nbsp;&nbsp;
+&lt;ol type="I"&gt;
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- table -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;table&gt;&lt;/table&gt;
+</td>
+<td valign="top"> 
+Table
+<br>
+<ul>
+<li> &lt;table width="30%"&gt;
+<li> &lt;table border="1" cellspacing="1" cellpadding="5"&gt;
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- tr -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;tr&gt;&lt;/tr&gt;
+</td>
+<td valign="top"> 
+Row in table
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- td -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;td&gt;&lt;/td&gt;
+</td>
+<td valign="top"> 
+Column in table
+<p>
+<ul>
+<li> &lt;td width="30%"&gt;
+<li> &lt;td valign="top" align="left"&gt;
+<li> &lt;td valign="top" align="center" colspan="2"&gt;
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- div -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;div&gt;&lt;/div&gt;
+</td>
+<td valign="top"> 
+Division.
+Gebruikt met CSS-style definities.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<tr>
+<td colspan="2" align="center" bgcolor="yellow">
+<font color="red">CSS</font>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- ============================================================= -->
+<!-- CSS properties -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+CSS Properties
+</td>
+<td valign="top"> 
+De uitgebreide lijst met 
+<a href="https://www.w3schools.com/cssref/default.asp" target="_blank">
+CSS Properties</a> van W3Schools.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- CSS selectors -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+CSS Selectors
+</td>
+<td valign="top"> 
+De uitgebreide lijst met
+<a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">
+CSS Selectors</a> van W3Schools.
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- comment -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="30%"> 
+/*  &nbsp;&nbsp;&nbsp;&nbsp;  */
+</td>
+<td valign="top"> 
+Comment
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- in-line style -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;tag style="property:value&gt; 
+</td>
+<td valign="top"> 
+In-line style
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- Internal style -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;style&gt;
+<br>
+selector {property:value; ...}
+<br>
+&lt;/style&gt;
+</td>
+<td valign="top"> 
+Internal style: in head-sectie. 
+<ul> 
+<li> body { margin:40; padding:10; background-color: lightyellow; } 
+<br> body { font-family: Andale Mono, monospace; }
+<br> body { font-size: 18px; font-style: normal; color: red}
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;body&gt;</c>
+<p>
+<li>    a { text-decoration:none; color:magenta; } 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;a&gt;</c><c>&lt;/a&gt;</c>
+<p>
+<li>    r { color:red; } 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;r&gt;</c><c>&lt;/r&gt;</c>
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- selector + class -->
+<!-- ============================================================= -->
+<tr>
+
+<td valign="top" width="15%"> 
+&lt;style&gt;
+<br>
+selector.class { property: value; ...}
+<br>
+&lt;/style&gt;
+</td>
+
+<td valign="top"> 
+Selector met 'class'-selector. 
+<ul>
+<li> p.a { font-style: normal; color: lightblue; }
+     <br>
+     p.b { font-style: italic; }
+     <br>
+     p.c { font-weight: bold; }
+     <br>
+     p.box { width: 100px; heigth: 50px; padding: 20px; border: 1px solid; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;p class="a"&gt;</c><c>&lt;/p&gt;</c>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;p class="box"&gt;</c><c>&lt;/p&gt;</c>
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- class -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+&lt;style&gt;
+<br>
+.classname { property: value; ...}
+<br>
+&lt;/style&gt;
+<td valign="top"> 
+Classes: kunnen in allerlei tags worden gebruikt. 
+<br>
+<ul>
+<li> .special { font-size:25px; font-weight:bold; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;div class="special"&gt; &lt;/div&gt;</c>
+
+<p>
+<li> .mar { margin-left:100px; padding:10px; } 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;div class="mar"&gt; &lt;/div&gt;</c>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;p class="mar"&gt; &lt;/p&gt;</c>
+
+
+</ul>
+
+
+
+<!-- ============================================================= -->
+<!-- class -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+
+&lt;style&gt;
+<br>
+.classname tag { property: value; ... }
+<br>
+&lt;/style&gt;
+
+<p>
+&lt;style&gt;
+<br>
+.classname tag:.. { property: value; ...}
+<br>
+&lt;/style&gt;
+
+</td>
+<td valign="top"> 
+
+Tag-classes: gelden voor bepaalde tag. 
+<br>
+
+<ul>
+
+
+<li> .speciallink a { color:green; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;a class="speciallink"&gt; &lt;/a&gt;</c>
+
+<p>
+<li> .linkstyle a { color:blue;}
+<br>
+     .linkstyle a:visited { color:red; }
+<br>
+     .linkstyle a:hover { background: yellow; color: black; }
+<br>
+     .linkstyle a.active  { background-color: green; color: white; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;div class="linkstyle"&gt;
+   &lt;a class="active"&gt; &lt;/a&gt;
+   &lt;/div&gt;
+</c>
+
+<p>
+<li> .navbar { background-color: #333; ... }
+<br>
+     .navbar a { color: blue }
+<br>
+     .navbar a:hover { background: #ddd; color: black; }
+<br>
+     .navbar a.active  { background-color: #04AA6D; color: white; }
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp; => &nbsp;&nbsp;  
+<c>&lt;div class="navbar"&gt;
+   &lt;a class="active" href=".."&gt; &lt;/a&gt;
+   &lt;/div&gt;
+</c>
+
+</ul>
+</td>
+</tr>
+<!-- ============================================================= -->
+<!-- External style -->
+<!-- ============================================================= -->
+<tr>
+<td valign="top" width="15%"> 
+selector {property:value; ...}
+</td>
+<td valign="top"> 
+External style : in aparte CSS-file "naam.css"
+<br>
+In head-sectie: &lt;link="stylesheet" href="naam.css"&gt;
+</td>
+</tr>
+<!-- ============================================================= -->
+
+
+<!-- ============================================================= -->
+<!--
+<tr>
+<td valign="top" width="15%"> 
+&lt;&gt;
+</td>
+<td valign="top"> 
+</td>
+</tr>
+-->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+</table>
+</center>
+
+<p>
+<hr size="5" color="red">
+<p>
+
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ============================================================= -->
+
+<head>
+
+<title>css2: internal; new</title>
+
+<style>
+/*
+
+Binnen de style tags kan commentaar worden opgenomen.
+
+*/
+</style>
+
+<style> 
+body { margin-left:40px; padding:10px; background-color: lightyellow; } 
+   a { text-decoration:none; color:magenta; } 
+   r { color:red; } 
+ div.grey { color:grey; font-size:20px; font-style:italic; } 
+</style>
+
+<style>
+p.a { font-style: normal; color: lightblue; }
+p.b { font-style: italic; }
+p.c { font-weight: bold; }
+p.box { width: 100px; heigth: 50px; padding: 20px; border: 1px solid; }
+</style>
+
+<style>
+   .special { font-size:25px; font-weight:bold; }
+
+   .speciallink a { color:green; }
+
+   .linkstyle a         { text-decoration:none; color:blue;}
+   .linkstyle a:hover   { text-decoration:none; background: yellow; color: black; }
+   .linkstyle a:active  { text-decoration:none; background-color: green; color: white; }
+   .linkstyle a:visited { text-decoration:none; color:red; }
+</style>
+
+<!-- ============================================================= -->
+<!-- Hieronder staan de nieuwe gedefinieerde styles. -->
+
+<style> h2 { color: red } </style>
+
+<style> or { color: orange } </style>
+
+<style> .bluecolor { color: blue } </style>
+
+<style> p.underline { text-decoration-line: underline } </style>
+
+<style> .mar { margin-left:100px; padding:10px; } </style>
+
+</head>
+
+<!-- ============================================================= -->
+
+<body>
+
+<hr size="5"><br>
+
+<h2>Interne styles</h2>
+
+<p>
+<r>
+Vooruitlopend op de laatste oefening, hebben we de marge van de gehele
+pagina al veranderd door de body-tag te herdefinieren.
+</r>
+
+<p>
+<font color="red">
+De koptekst is rood gemaakt door voor h2 een style definitie te maken.
+</font>
+
+<p>
+Bekijk weer de broncode.
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+<!-- ============================================================= -->
+<p>
+<font color="red">
+De onderstaande tekst is oranje gemaakt met de nieuw gedefinieerde
+tag: &lt;or&gt;.
+</font>
+<!-- ============================================================= -->
+
+<p>
+<or>
+In deze pagina plaatsen we style-definities bovenaan de pagina.
+Ze staan tussen 
+<font color="green">&lt;head&gt;&lt;/head&gt;</font>
+en hebben de algemene vorm
+</or>
+
+<p>
+<font size="+2" color="green">
+<pre>
+   &lt;style&gt;
+      selector1 { property1: value1; property2: value2; }
+      selector2 { property: value; }
+      ...
+   &lt;/style&gt;
+</pre>
+</font>
+
+<p>
+De 'selector' kan een bestaande 'tag' zijn die wordt aangepast.
+
+<p>
+De definities van 'properties' en 'values' is anders dan in de in-line 
+styles.
+Vergelijk bijvoorbeeld de manier waarop de 
+<font color="green">&lt;body&gt;</font>-tag is
+aangepast.
+
+<!-- ============================================================= -->
+<!-- Tekst blauw -->
+<!-- ============================================================= -->
+
+<p>
+<font color="red">
+In onderstaande paragraaf is de tekst blauw gemaakt met een
+nieuw gedefinieerde <em>class</em>.
+</font>
+
+<p class="bluecolor">
+Op die manier kunnen we alle tags in deze pagina <b>in een keer</b>
+veranderen.
+<br>
+Let bijvoorbeeld op 
+<a href="#">deze link</a>
+die verder niks doet, maar waaraan we zien dat er geen streep 
+onder staat.
+De link-tag <font color="green">&lt;a&gt</font> is aangepast.
+</p>
+<!-- ============================================================= -->
+
+<p>
+We kunnen ook nieuwe tags definieren.
+Bijvoorbeeld een tag die de kleur van de letters verandert.
+<r>Dat is hier toegepast: alle letters worden rood. Tot hier.</r>
+
+<p>
+Het handige is dat we zo met een eenvoudige ingreep de kleur op veel
+plaatsen tegelijk kunnen veranderen.
+
+<p>
+Vaak wordt de &lt;div&gt;-tag gebruikt om voor een bepaald
+gedeelte van de pagina styles te specificeren.
+
+<p>
+<div class="grey">
+Met de &ltdiv-tag&gt; (division) veranderen we een gedeelte van de pagina.
+Hier is bijvoorbeeld een ander font gekozen. 
+En een andere kleur.
+</div>
+
+<p>
+Een overzicht van CSS-selectors en CSS-properties vindt u 
+<a href="https://www.w3schools.com/cssref/default.asp" target="_blank">
+hier</a>
+en u kunt er naar hartelust mee experimenteren.
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+Voor een bepaalde 'selector' kunnen we de definitie specificeren met
+een nieuwe 'selector'.
+De syntax is:
+
+<p>
+<font size="+2" color="green">
+<pre>
+   &lt;style&gt;
+      selector.selector1 { property1: value1; property2: value2; }
+      selector.selector2 { property: value; }
+      ...
+   &lt;/style&gt;
+</pre>
+</font>
+
+De tweede 'selector' wordt een klasse ('class') genoemd.
+
+<p>
+As voorbeeld staan hieronder drie paragrafen in verschillend 
+lettertype.
+Bekijk de broncode voor de manier waarop dit tot stand is gekomen.
+
+<p class="a">Paragraaf met normaal font in lichtblauwe kleur.</p>
+<p class="b">Paragraaf met italic font.</p>
+<p class="c">Paragraaf met bold font.</p>
+
+We kunnen tekst (of iets anders) in een 'box' plaatsen.
+
+<p class="box">
+Dat ziet er dan zo uit.
+</p>
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+
+<!-- ============================================================= -->
+<!-- In onderstaande paragraaf is de tekst onderstreept. -->
+<!-- ============================================================= -->
+
+<font color="red">
+<p>
+In onderstaande paragraaf is de tekst onderstreept.
+</font>
+
+<!-- ============================================================= -->
+<p class="underline">
+We kunnen een klasse ook apart definieren
+en later op een bepaalde selector toepassen.
+Dat is nodig als we bijvoorbeeld de &lt;div&gt;-tag op verschillende
+plaatsen willen inzetten met een andere style-definitie.
+<br>
+De sytax is als volgt - let op de punt voorafgaand aan de naam - :
+</p>
+<!-- ============================================================= -->
+
+<p>
+<font size="+2" color="green">
+<pre>
+   &lt;style&gt;
+      .classname { properties: values; }
+   &lt;/style&gt;
+</pre>
+</font>
+
+<p>
+<div class="special">
+In de broncode ziet u dat hier gebruik is gemaakt van de
+&lt;div&gt;-tag om de paragraaf een bepaald aanzien te geven.
+De <a href="#">link-tag</a> is onveranderd van kleur.
+</div>
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+<!-- ============================================================= -->
+<!-- In onderstaande paragraaf veranderen we de marges -->
+<p>
+<r>
+In onderstaand text-deel hebben we de marge veranderd.
+<br>
+Dit is gedaan met een div-tag.
+Het was daartoe nodig om de div-tag, die in de oorspronkelijke
+pagina 'algemeen' was gedefinieerd, opnieuw te definieren.
+(Zie de bron-code.)
+<br>
+We kunnen concluderen dat het niet verstandig is om de div-tag zelf
+anders te definieren, maar dat uitsluitend te doen met een 
+CSS-class.
+</r>
+<!-- ============================================================= -->
+
+<div class="mar">    <!-- Hier begint de nieuwe div-tag -->
+
+<p>
+Het kan nog een slagje gedetailleerder (complexer, zo u wilt).
+We kunnen binnen een klasse de definities van properties beperken 
+tot bepaalde tags.
+Je krijgt dan het volgende:
+</p>
+
+<p>
+<font size="+2" color="green">
+<pre>
+   &lt;style&gt;
+      .classname tag { properties: values; }
+   &lt;/style&gt;
+</pre>
+</font>
+
+<p>
+<div class="speciallink">
+In de broncode ziet u dat hier weer gebruik is gemaakt van de
+&lt;div&gt;-tag om de paragraaf een bepaald aanzien te geven.
+De <a href="#">link-tag</a> is nu dit.
+We zien dat de oorspronkelijke style-definitie van de &lt;div&gt;-tag
+worden overschreven of aangevuld.
+</div>
+
+<p class="linkstyle">
+Van de link-tag kunnen we het
+uiterlijk veranderen als we er met de muis overheen bewegen (hover)
+of als de link wordt aangklikt (active) of in het verleden aangeklikt
+is (visited).
+<br>
+Het wordt <a href="#">hier</a> gedemonstreerd.
+</p>
+
+</div> <!-- Hier eindigt de div-tag met de veranderde margin -->
+
+<p><br>
+<!-- ============================================================= -->
+<hr><br>
+
+Hier laten we het bij voor wat betreft CSS-style definities.
+<br>
+Zoals u ziet is het werken met CSS-styles best ingewikkeld.
+Er zijn namelijk heel veel mogelijkheden en die kunnen ook nog eens
+gecombineerd worden.
+Opzoeken op internet is het parool en ...
+voorbeelden zoeken en kopieren.
+
+<r>
+<p class="mar">
+Omdat de marge verandering via een class-definitie is gespecificeerd,
+kunnen we die class ook opnemen in een paragraaf, de p-tag.
+Dat is hier gebeurd.
+</p>
+</r>
+
+<p><br>
+<hr size="5">
+
+</body>
+</html>
