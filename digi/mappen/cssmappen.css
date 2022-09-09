@@ -1,0 +1,18 @@
+
+
+
+/*
+bl : hoofdstukken       : red
+wl : web-link           : blue
+sl : sheet-link         : orange (dus niet als link in cursusmin.html)
+pl : pagina in werkboek : gray
+*/
+
+*  { font-family:Andale Mono, monospace;font-size:20px;font-style:normal; } 
+a  { text-decoration:none; } 
+i  { font-family:Andale Mono, monospace;font-size:20px;font-style:italic; } 
+bl { font-family:Andale Mono, monospace;font-size:25px;font-style:normal;font-weight:bold;color:red; } 
+r  { font-family:Andale Mono, monospace;font-size:20px;font-style:normal;color:red; } 
+wl { font-family:Andale Mono, monospace;font-size:20px;font-style:normal;color:blue; } 
+sl { font-family:Andale Mono, monospace;font-size:20px;font-style:normal;color:orange; } 
+pl { font-family:Andale Mono, monospace;font-size:20px;font-style:normal;color:gray; } 
