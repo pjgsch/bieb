@@ -1,38 +1,110 @@
 <html>
+<head>
+<title> </title>
 <style> * { font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
+<style> r { font-family:Andale Mono, monospace;font-size:16px;font-style:normal; color:red } </style>
+<style> a { text-decoration:none } </style>
+
+<script>
+var hamer = '\
+Om een <font color="blue">spijker</font> ergens \
+in te slaan gebruik je een <font color="red">hamer</font>.'
+
+var nijptang = '\
+Om een spijker ergens uit te trekken gebruik je een \
+<font color="red">nijptang</font>.'
+
+var schroevendraaier = '\
+Een schroef draai je vast of los met een \
+<font color="red">schroevendraaier</font>.'
+
+var sleutel = '\
+Een <font color="blue">bout</font> of <font color="blue">moer</font> \
+draai je vast of los met een \
+<font color="red">steeksleutel</font> of een \
+<font color="red">ringsleutel</font>. \
+<br> \
+Ook kun je hiervoor een <font color="red">baco</font> gebruiken.'
+
+var zaag = '\
+Met een zaag kun je een stuk van een stok of plaat afzagen. \
+Voor hout gebruik je dan een gewone \
+<font color="red">zaag</font> en voor ijzer een \
+<font color="red">ijzerzaag</font>.'
+
+function myfunction(sel){ 
+  var newWindowContent;
+  var newWindow = window.open("", "", "width=500,height=400");
+
+  if (sel == 1) {
+    newWindowContent = hamer;
+  }
+  else if (sel == 2) {
+    newWindowContent = nijptang;
+  }
+  else if (sel == 3) {
+    newWindowContent = schroevendraaier;
+  }
+  else if (sel == 4) {
+    newWindowContent = sleutel;
+  }
+  else if (sel == 5) {
+    newWindowContent = zaag;
+  }
+
+  newWindow.document.write(newWindowContent);
+};
+</script>
+
+</head>
+
 <body style="margin:40;padding:10" text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
 
+<p><hr size="5">
+
+<!-- ============================================================= -->
+
+<h1>Gereedschap</h1>
+
 Het is handig om wat gereedschap in huis te hebben.
-<br>
 Dan kun je iets repareren.
-<br>
 Je moet dan wel een beetje handig zijn.
 
 <p>
-Om een <font color="blue">spijker</font> ergens in te slaan 
-gebruik je een <font color="red">hamer</font>.
-Om een spijker ergens uit te trekken gebruik je een 
-<font color="red">nijptang</font>.
+<ul>
 
-<p>
-Een <font color="blue">schroef</font> draai je vast of los met een
-<font color="red">schroevendraaier</font>.
-Een <font color="blue">bout</font> of <font color="blue">moer</font> 
-draai je vast of los met een 
-<font color="red">steeksleutel</font> of een 
-<font color="red">ringsleutel</font>.
-<br>
-Ook kun je hiervoor een
-<font color="red">baco</font> gebruiken.
+<li>
+Wat gebruik je om een <font color="blue">spijker</font> ergens 
+in te slaan?
+<button onclick="myfunction(1)">[!]</button>
 
-<p>
-(Vraag: Hoe draai je - rechts- of linksom - om een schroef ergens 
+<li>
+Wat gebruik je om een spijker ergens uit te trekken?
+<button onclick="myfunction(2)">[!]</button>
+
+<li>
+Wat gebruik je om een <font color="blue">schroef</font> vast te draaien?
+<button onclick="myfunction(3)">[!]</button>
+
+<li>
+Wat gebruik je om een <font color="blue">bout</font> of 
+<font color="blue">moer</font> 
+vast te draaien?
+<button onclick="myfunction(4)">[!]</button>
+
+<li>
+Hoe draai je - rechts- of linksom - om een schroef ergens 
 <b>in</b> te draaien? En eruit?)
 
-<p>
-Met een zaag kun je een stuk van een stok of plaat afzagen.
-Voor hout gebruik je dan een gewone
-<font color="red">zaag</font> en voor ijzer een
-<font color="red">ijzerzaag</font>.
+<li>
+Wat gebruik je om een plank korter te maken?
+<button onclick="myfunction(5)">[!]</button>
+
+</ul>
+
+<!-- ============================================================= -->
+
+<p><hr size="5">
 
 </body></html>
+
