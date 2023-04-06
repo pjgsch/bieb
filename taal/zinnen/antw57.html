@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>thema 57</title>
+<style> * { font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
+<style> r { font-family:Andale Mono, monospace;font-size:16px;font-style:normal; color:red } </style>
+<style> a { text-decoration:none } </style>
+
+<script>
+
+var pasen = '\
+De betekenis van Pasen. \
+<p> \
+Op Pasen vieren de christenen de verrijzenis van Christus 3 dagen \
+na zijn kruisiging op Goede Vrijdag \
+'
+
+var vasten = '\
+De vastentijd. \
+<p> \
+Het christelijke paasfeest wordt voorafgegaan door een \
+"veertigdaagse" vastenperiode. \
+Die begint op Aswoensdag en eindigt de zaterdag voor Pasen. \
+In werkelijkheid duurt de periode 46 dagen, maar de zondagen \
+tellen niet mee zodat we aan een veertig dagen komen. \
+De laatste zondag voor Pasen, Palmzondag, begint de Goede Week.\
+'
+
+var pasendatum = '\
+De datum van Pasen. \
+<p> \
+Het christelijke paasfeest valt bij ons officieel op de eerste zondag \
+na de eerste volle maan na het begin van de astronomische lente. \
+In de praktijk valt Pasen daarom altijd tussen 22 maart en 25 april. \
+De orthodoxe Christenen vieren hun paasfeest een week later, \
+omdat zij de \
+<a href="https://nl.wikipedia.org/wiki/Juliaanse_kalender" target="_blank"> \
+Juliaanse kalender</a> gebruiken. \
+'
+
+var paastradities = '\
+Paastradities. \
+<p> \
+<ul> \
+<li> op Goede Vrijdag: de Matheus Passion \
+<p> \
+<li> paasontbijt \
+<br> => goed eten na de vastenperiode \
+<li> gekleurde/versierde eieren \
+<br> => grote vooraad eieren verkopen \
+<li> paashaas of paasklokken \
+<br> => die brengen de paaseieren \
+<li> eieren verstoppen en zoeken \
+<br> => de paashaas heeft de eieren verstopt \
+<li> paasvuur \
+<br> => voorjaarsschoonmaak: rommel opruimen na de winterperiode \
+<li> bezoek woonboulevard \
+<br> => commercie \
+</ul> \
+'
+
+var einummer = '\
+Code op het ei. \
+<p> \
+Op eieren staat altijd een stempel met getallen en letters. \
+Deze code is wettelijk verplicht en moet dus op elk ei staan. \
+<br> \
+Een eicode bestaat uit 3 delen: c1-c2-c3, bijvoorbeeld 2-NL-45146 01.\
+<p> \
+c1 geeft aan hoe de kip heeft geleefd: \
+<br> \
+c1 = 0 => biologisch ei \
+<br> \
+c1 = 1 => vrije-uitloopei of grasei \
+<br> \
+c1 = 2 => scharrelei, scharrel+ ei, rondeel \
+<br> \
+c1 = 3 => legbatterij; sinds 2012 verboden \
+<p> \
+c2 is het land van herkomst \
+<p> \
+c3 verwijst naar het bedrijf waar het ei vandaan komt. \
+'
+
+var eibereiding = '\
+Wat kun je doen/maken met een ei? \
+<p> \
+<ul> \
+<li> koken (zacht, hard) \
+<li> pocheren \
+<li> spiegelei bakken \
+<li> roerei bakken \
+<li> ommelet bakken \
+<li> eierlikeur (advokaat) maken \
+</ul> \
+<p> \
+Eieren worden gebruikt in heel veel andere producten. \
+Niet alleen in voedingsmiddelen. \
+'
+
+function myfunction(sel){ 
+  var newWindowContent;
+  var newWindow = window.open("", "", "width=500,height=400");
+
+  if (sel == 1) {
+    newWindowContent = pasen;
+  } 
+  else if (sel == 2) {
+    newWindowContent = vasten;
+  }
+  else if (sel == 3) {
+    newWindowContent = pasendatum;
+  }
+  else if (sel == 4) {
+    newWindowContent = paastradities;
+  }
+  else if (sel == 5) {
+    newWindowContent = einummer;
+  }
+  else if (sel == 6) {
+    newWindowContent = eibereiding;
+  }
+
+  newWindow.document.write(newWindowContent);
+};
+
+</script>
+
+</head>
+
+<body style="margin:40;padding:10" text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
+
+<p><hr size="5">
+
+<!-- ============================================================= -->
+
+<h1>Pasen</h1>
+
+<p>
+<ul>
+
+<li>
+Wat is voor Christenen de betekenis van het paasfeest?
+<button onclick="myfunction(1)">[!]</button>
+
+<li>
+Welke periode gaat aan het paasfeest vooraf?
+<button onclick="myfunction(2)">[!]</button>
+
+<li>
+Wanneer is het Pasen?
+<button onclick="myfunction(3)">[!]</button>
+
+<li>
+Welke paastradities (= gebruiken) ken je?
+<br>
+Waar komen ze vandaan?
+<button onclick="myfunction(4)">[!]</button>
+
+<p>
+Een van de paastradities is het versieren van eieren.
+<br>
+Over een ei valt veel te vertellen.
+In de figuur zie je wat er in zit.
+
+<p>
+<table width="100%">
+<tr>
+<td valign="top" width="50%">
+<img src="../extra/ei.jpg" width="90%">
+</td>
+<td valign="top" width="50%">
+
+Vragen:
+
+<p>
+<li>
+Wanneer is een ei wit en wanneer bruin?
+<br>
+Is er verschil tussen die eieren?
+
+<li>
+Op een vers ei uit de winkel staat een nummer.
+<br>
+Wat betekent dat nummer?
+<button onclick="myfunction(5)">[!]</button>
+
+<li>
+Hoe kun je nagaan of een ei gekookt is?
+
+<li>
+Hoe kun je nagaan of een ei vers of 'oud' is?
+
+<li>
+Hoe lang moet je een 'hardgekookt' ei koken?
+
+<li>
+Hoe kun je een ei nog meer bereiden?
+<button onclick="myfunction(6)">[!]</button>
+
+<li>
+Wat is een 'broedei'?
+
+<li>
+Wat komt er uit een 'broedei' na succesvol uitbroeden?
+
+
+</td>
+</tr>
+</table>
+
+
+
+</ul>
+
+<!-- ============================================================= -->
+
+<p><hr size="5">
+
+</body></html>
+
