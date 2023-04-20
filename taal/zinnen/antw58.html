@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>thema58</title>
+<style> body { margin:40px;padding:10px;font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
+<style> r { font-family:Andale Mono, monospace;font-size:16px;font-style:normal; color:red } </style>
+<style> a { text-decoration:none } </style>
+
+<script>
+
+var huislijst = '\
+In een huis kun je de volgende dingen vinden: \
+<p> \
+deur, raam, muur, vloer, plafond, kamer, \
+<br> \
+vensterbank, dak, trap, kelder, gang, schoorsteen, \
+<br> \
+dakgoot, regenpijp, keuken, slaapkamer, badkamer, \
+<br> \
+garage, wc, douche, bad, meterkast, verwarming, \
+<br> \
+kraan, stopcontact, trap, aanrecht, .. \
+'
+
+var oplossing = '\
+De oplossing van de fillipine is: \
+<p> \
+1:  aanrecht <br> \
+2:  muur <br> \
+3:  keuken <br> \
+4:  raam <br> \
+5:  wc <br> \
+6:  vloer <br> \
+7:  plafond <br> \
+8:  verwarming <br> \
+9:  vensterbank <br> \
+10: gang <br> \
+<p> \
+Het gezochte woord is : "huurwoning" \
+'
+
+function myfunction(sel){ 
+  var newWindowContent;
+  var newWindow = window.open("", "", "width=500,height=400");
+
+  if (sel == 1) {
+    newWindowContent = huislijst;
+  } 
+  else if (sel == 2) {
+    newWindowContent = oplossing;
+  }
+
+  newWindow.document.write(newWindowContent);
+};
+
+</script>
+
+</head>
+
+<body text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
+
+<p><hr size="5">
+
+<!-- ============================================================= -->
+
+<h2>Het huis</h2>
+
+Hieronder staat een <b>bouwtekening</b> van een huis.
+
+<p>
+<img src="../extra/bouwtekening.jpg" width="100%">
+<br>
+<font size="-1"> 
+[bron: Hof van Maandag, OvO associates, architects.]
+</font>
+
+<p>
+Benoem zoveel mogelijk (onder)delen van het huis.
+Wijs ze aan op de tekening.
+Schrijf ze op.
+<button onclick="myfunction(1)">[!]</button>
+
+<p>
+In de 
+<a href="../docs/filippine-huurwoning.pdf" target="_blank">puzzel</a>
+moet je een aantal delen van het huis in de juiste
+vakjes invullen.
+Dan krijg je in de grijze vakjes een woord.
+<button onclick="myfunction(2)">[!]</button>
+
+<!-- ============================================================= -->
+
+<p><hr size="5">
+
+</body></html>
+
