@@ -1,28 +1,114 @@
 <html>
 <head>
-<title> </title>
-<style> * { font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
-<style> r { font-family:Andale Mono, monospace;font-size:16px;font-style:normal; color:red } </style>
+<title>thema5</title>
+<style> body { margin:40px;padding:10px;font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
+<style> td { font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
+<style> r { font-family:Andale Mono, monospace;font-size:25px;font-style:normal; color:red } </style>
 <style> a { text-decoration:none } </style>
+
+<script>
+
+var woordenij = '\
+jij, hij, zij, wij \
+<br> \
+bij, dij, tij, rij, ijs \
+<br> \
+vijl, wijd, lijf, blij, vijg \
+<br> \
+zwijn, twijg \
+<br> \
+lijden, wijden, schijf \
+'
+
+var woordenei = '\
+ei, wei \
+<br> \
+leiden \
+'
+
+function myfunction(sel){ 
+  var newWindowContent;
+  var newWindow = window.open("", "", "width=500,height=400");
+
+  if (sel == 1) {
+    newWindowContent = woordenij;
+  } 
+  else if (sel == 2) {
+    newWindowContent = woordenei;
+  }
+
+  newWindow.document.write(newWindowContent);
+};
+
+</script>
+
 </head>
 
-<body style="margin:40;padding:10" text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
+<body text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
 
 <p><hr size="5">
 
 <!-- ============================================================= -->
 
-<h1>De tijd</h1>
+<h2>Ei ij</h2>
 
-Het is nu bijna half acht.
-<p>
-Het is nu drie minuten voor acht.
-<p>
-Over een paar minuten is het acht uur.
-<p>
-Het is net acht uur geweest.
+In het Nederlands kennen we de <i>lange</i> ij en de <i>korte</i> ei.
+Het is vaak moeilijk om de goede 'ij/ei' te kiezen.
 
+<p>
 
+<ul>
+<li>
+Noem zoveel mogelijk woorden met een 'ij/ei' en schrijf ze op.
+<br>
+<button onclick="myfunction(1)">[ij]</button>
+<button onclick="myfunction(2)">[ei]</button>
+<p>
+<li>
+Schrijf voor <i>zelfstandige naamwoorden</i> ook het meervoud op.
+<p>
+<li>
+Schrijf voor <i>werkwoorden</i> de tegenwoordige tijd en de verleden tijd op.
+</ul>
+
+<p>
+Twee voorbeelden:
+
+<p>
+<table cellspacing="1" cellpadding="10" border="1" width="100%">
+<tr>
+<td valign="top"> <r>wijk</r> </td>
+<td valign="top"> zelfstandig naamwoord </td>
+<td valign="top"> deel van dorp of stad </td>
+<td valign="top"> meervoud: wijken </td>
+</tr>
+<tr>
+<td valign="top"> <r>wijken</r> </td> 
+<td valign="top"> werkwoord </td> 
+<td valign="top"> uit de weg gaan </td> 
+<td valign="top"> ik wijk (nu), ik week (gisteren) </td>
+</tr>
+</table>
+
+<p>
+Nog een voorbeeld:
+
+<p>
+<r>makkelijk</r>: bijvoeglijk naamwoord: eenvoudig
+<p>
+De uitgang <r>-lijk</r> spreken we in dergelijke gevallen uit als 
+<r>-lik</r> of <r>-lek</r>.
+
+<p><br><p><br><hr><p>
+<i>
+Zelfstandige naamwoorden zijn meestal te combineren met 
+'de', 'het' of 'een' (de lidwoorden).
+<p>
+Bijvoeglijke naamwoorden geven een eigenschap of toestand aan 
+van een zelfstandig naamwoord.
+<p>
+Een werkwoord beschrijft een handeling of toestand.
+</i>
 <!-- ============================================================= -->
 
 <p><hr size="5">
