@@ -1,31 +1,133 @@
 <html>
 <head>
-<title> </title>
-<style> * { font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
-<style> r { font-family:Andale Mono, monospace;font-size:16px;font-style:normal; color:red } </style>
+<title>thema30</title>
+
+<style> body { margin:40px;padding:10px;font-family:Andale Mono, monospace;font-size:18px;font-style:normal; } </style>
+<style> td { font-family:Andale Mono, monospace;font-size:18px;font-style:normal; } </style>
+<style> r { font-family:Andale Mono, monospace;font-size:18px;font-style:normal; color:red } </style>
 <style> a { text-decoration:none } </style>
+
+<!-- ============================================================= -->
+
+<script>
+
+var specs = '\
+Sint Antonius molen Heythuysen \
+<p> \
+<table cellpadding="5"> \
+<br> \
+<tr><td>Bouwjaar           </td><td> 1860/1861 </td></tr>\
+<tr><td>Renovatie          </td><td> 1973 en tussen 2001 en 2004 </td></tr>\
+<tr><td>Type               </td><td> Beltmolen </td></tr>\
+<tr><td>Hoogte van de belt </td><td>  4.50 m </td></tr>\
+<tr><td>Functie            </td><td> Korenmolen </td></tr>\
+<tr><td><br></td><td><br></td></tr>\
+<tr><td>Romp               </td><td> Ronde stenen molen </td></tr>\
+<tr><td>Kap                </td><td> Gedekt met dakleer </td></tr>\
+<tr><td>Vlucht             </td><td> 26.20 m </td></tr>\
+<tr><td>Bovenwiel          </td><td> 62 kammen </td></tr>\
+<tr><td>Bovenschijfloop    </td><td> 31 staven </td></tr>\
+<tr><td>Spoorwiel          </td><td> 64 kammen </td></tr>\
+<tr><td>Steenschijflopen   </td><td> 24 staven </td></tr>\
+<tr><td>Oberbrengverhouding</td><td> (62/31)*(64/24) = 1:5.33 </td></tr>\
+</table> \
+<p> \
+Meer informatie: \
+<a href="https://www.molendatabase.nl/nederland/molen.php?nummer=424" target="_blank">hier</a> \
+'
+
+function myfunction(sel){ 
+  var newWindowContent;
+  var newWindow = window.open("", "", "width=500,height=400");
+
+  if (sel == 1) {
+    newWindowContent = specs;
+  } 
+
+  newWindow.document.write(newWindowContent);
+};
+
+</script>
+
+<!-- ============================================================= -->
+
 </head>
 
-<body style="margin:40;padding:10" text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
+<body text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
 
 <p><hr size="5">
 
 <!-- ============================================================= -->
 
-<h1>Kaas</h1>
-
-Kaas wordt gemaakt van melk.
+<h3>De Sint-Antonius molen</h3>
 
 <p>
-De meeste kaas wordt gemaakt van koemelk.
+<table width="100%">
+
+<tr>
+
+<td valign="top" width="75%">
+
+De Sint-Antonius molen staat in Heythuysen tegenover de bibliotheek.
+Ze is gebouwd op een verhoging, de belt, en is dus
+een <r>beltmolen</r>.
+Het is een <r>windmolen</r> omdat ze door
+de wind wordt aangedreven.
+In de molen wordt graan gemalen tot meel:
+het is een <r>korenmolen</r>.
 <br>
-Maar je hebt ook geitenkaas.
-Die wordt gemaakt van .. Inderdaad.
+De molen is gebouwd in 1861 en gerenoveerd in 1973 en 2004.
+Klik 
+<button onclick="myfunction(1)">hier</button>
+voor meer gegevens.
 
 <p>
-Waarom is kaas van koemelk vaak geel?
+De figuur onder de foto toont een doorsnede van de molen.
+(Klik erop voor een grote afbeelding.)
+Er zijn vier zolders.
+Je kunt erop komen via trappen en ladders.
+
+<p>
+De <r>kap</r> van de molen, met de <r>wieken</r>, 
+wordt in de wind gedraaid.
+Dat heet <r>kruien</r>.
+Daarna worden er doeken over de wieken gespannen om meer wind te vangen.
+
+<p>
+De wind blaast tegen de wieken waardoor die gaan draaien.
+Via een tandwiel op de <r>molenas</r> gaat de vertikale
+<r>koningsspil</r> draaien en daardoor ook de twee maalstenen.
+Het graan wordt tussen de stenen gestrooid en gemalen.
+Het meel wordt opgevangen in een zak.
+
+<p>
+Het draaien van de wieken kan worden gestopt met een rem,
+de <r>vang</r>, boven in de kap.
+
+</td>
+
+
+<td valign="top" width="25%" align="center">
+
+<img src="../extra/Heythuysen-Sint-Antonius_4_foto_Ronald_Bakker.jpeg" height="250px">
+
 <br>
-(Kijk eens verder.)
+
+<a href="../extra/korenmolen_doorsnede.jpg" target="_blank">
+<img src="../extra/korenmolen_doorsnede.jpg" height="250px"> </a>
+
+<br>
+
+<a href="../extra/windmolenmechanisme.png" target="_blank">
+<img src="../extra/windmolenmechanisme.png" height="250px"> </a>
+
+</td>
+
+
+</tr>
+
+</table>
+
 <!-- ============================================================= -->
 
 <p><hr size="5">
