@@ -1,18 +1,17 @@
 <html>
 <head>
-<title>thema0</title>
-<style> body { margin:40px;padding:10px;font-family:Andale Mono, monospace;font-size:25px;font-style:normal; } </style>
-<style> r { font-family:Andale Mono, monospace;font-size:16px;font-style:normal; color:red } </style>
+<title>thema####</title>
+
+<style> body { margin:40px;padding:10px;font-family:Andale Mono, monospace;font-size:18px;font-style:normal; } </style>
+<style> td { font-family:Andale Mono, monospace;font-size:18px;font-style:normal; } </style>
+<style> r { font-family:Andale Mono, monospace;font-size:18px;font-style:normal; color:red } </style>
 <style> a { text-decoration:none } </style>
+
+<!-- ============================================================= -->
 
 <script>
 
-var ##variable1## = '\
-##tekst met html tags## \
-'
-
-var ##variable2## = '\
-##tekst met html tags## \
+var #### name #### = '\
 '
 
 function myfunction(sel){ 
@@ -20,33 +19,33 @@ function myfunction(sel){
   var newWindow = window.open("", "", "width=500,height=400");
 
   if (sel == 1) {
-    newWindowContent = ##variable1##;
+    newWindowContent = #### name ####;
   } 
-  else if (sel == 2) {
-    newWindowContent = ##variable2##;
-  }
 
   newWindow.document.write(newWindowContent);
 };
 
 </script>
 
+<!-- ============================================================= -->
+
 </head>
- 
+
 <body text="black" bgcolor="lightyellow" link="blue" alink="blue" vlink="blue">
 
 <p><hr size="5">
 
 <!-- ============================================================= -->
 
-<h2> </h2>
+<h3>#### title ####</h3>
 
-<button onclick="myfunction(1)">[!]</button>
+<button onclick="myfunction(1)">#### first ####</button>
 
-<button onclick="myfunction(2)">[!]</button>
+#### content ####
 
 <!-- ============================================================= -->
 
 <p><hr size="5">
 
 </body></html>
+
