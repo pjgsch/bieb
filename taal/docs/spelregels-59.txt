@@ -1,0 +1,43 @@
+======================================================================
+Woorden maken
+
+Nodig: 
+
+= De tabel met het alfabet, voorzien van een weegfactor volgens Scrabble.
+= Een pion
+= Een dobbelsteen
+
+= Deelnemers gooien beurtelings met een dobbelsteen.
+= Het gegooide cijfer is het aantal stappen vooruit van de pion.
+= De start is bij de letter 'a'.
+= De looprichting van de pion is 'tegen de klok in'.
+= De letter onder de pion is de beginletter van het te vinden woord.
+
+======================================================================
+Spelregels
+======================================================================
+
+= Alleen zelfstandige OF bijvoeglijke naamwoorden OF werkwoorden 
+  NB: Bijvoeglijke naamwoorden zijn vaak afgeleid van zelfstandige 
+      naamwoorden: ~ig, ~tisch, etc.
+
+= Geen: meervoud, verkleinwoord, vervoeging.
+= Geen: eigennamen, bv. Nederland, Antarctica, Engelse.
+= Geen: cijfers en getallen 
+= Geen: samenstellingen
+        Dus:   fiets               goed
+               fietsbel            fout
+               keuken              goed
+               keukendeur          fout
+
+= Het aantal letters in een woord is de score (het aantal punten)
+  vermenigvuldigd met de weegfactor.
+
+= Woorden worden eventueel opgezocht in het woordenboek.
+= Andere deelnemers mogen aanvullen, ook met samenstellingen.
+  Ze krijgen hier geen punten voor.
+
+Variant: woorden met een bepaald aantal letters.
+         Puntentelling volgens weegfactor bij de letter.
+
+======================================================================
